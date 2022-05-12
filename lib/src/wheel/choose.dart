@@ -32,7 +32,7 @@ class _ChooseState extends State<Choose> {
                   child: Center(child: Text('RULETA')),
                 ),
               ),
-              SizedBox(width: 7),
+              SizedBox(height: 2),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'list');
@@ -44,7 +44,7 @@ class _ChooseState extends State<Choose> {
                   child: Center(child: Text('LISTA')),
                 ),
               ),
-              SizedBox(width: 7),
+              SizedBox(height: 2),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'dice');
@@ -54,6 +54,18 @@ class _ChooseState extends State<Choose> {
                   width: 200,
                   color: Colors.red,
                   child: Center(child: Text('DADO')),
+                ),
+              ),
+              SizedBox(height: 2),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, 'generator');
+                },
+                child: Container(
+                  height: 40,
+                  width: 200,
+                  color: Colors.blueAccent,
+                  child: Center(child: Text('ALEATORIO')),
                 ),
               )
             ]),

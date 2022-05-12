@@ -42,7 +42,7 @@ class _WheelState extends State<Wheel> {
           GestureDetector(
             onTap: (){
               setState(() {
-                number = Random().nextInt(3);
+                number = Random().nextInt(6);
               });
             },
             child: Container(

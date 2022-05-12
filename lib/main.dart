@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:suerteos/src/dice/dice.dart';
 import 'package:suerteos/src/list/RandomSelector.dart';
+import 'package:suerteos/src/random/generator.dart';
 import 'package:suerteos/src/wheel/choose.dart';
 import 'package:suerteos/src/wheel/wheel.dart';
 
@@ -27,7 +28,8 @@ class _MainState extends State<MyApp> {
         'choose' : (BuildContext context ) => Choose(),
         'wheel' : (BuildContext context ) => Wheel(),
         'list' : (BuildContext context) => RandomSelector(),
-        'dice' :(BuildContext context) => Dice()
+        'dice' :(BuildContext context) => Dice(),
+        'generator': (BuildContext context) => Generator(),
       },
     );
   }
