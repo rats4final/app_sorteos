@@ -19,12 +19,13 @@ class _WheelState extends State<Wheel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text("Ruleta de las decisiones")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            height: 300,
+            height: 350,
             child: FortuneWheel(
               animateFirst: false,
               selected: number, //XD
@@ -39,6 +40,7 @@ class _WheelState extends State<Wheel> {
               ],
             ),
           ),
+          SizedBox(height: 5),
           GestureDetector(
             onTap: (){
               setState(() {

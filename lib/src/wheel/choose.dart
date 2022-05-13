@@ -14,6 +14,7 @@ class _ChooseState extends State<Choose> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(title: Text("SUERTEOS")),
       body: Center(
         child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -32,7 +33,7 @@ class _ChooseState extends State<Choose> {
                   child: Center(child: Text('RULETA')),
                 ),
               ),
-              SizedBox(height: 2),
+              SizedBox(height: 5),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'list');
@@ -44,7 +45,7 @@ class _ChooseState extends State<Choose> {
                   child: Center(child: Text('LISTA')),
                 ),
               ),
-              SizedBox(height: 2),
+              SizedBox(height: 5),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'dice');
@@ -56,7 +57,7 @@ class _ChooseState extends State<Choose> {
                   child: Center(child: Text('DADO')),
                 ),
               ),
-              SizedBox(height: 2),
+              SizedBox(height: 5),
               GestureDetector(
                 onTap: () {
                   Navigator.pushNamed(context, 'generator');
