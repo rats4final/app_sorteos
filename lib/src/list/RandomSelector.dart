@@ -107,8 +107,11 @@ class _HomeState extends State<Home> {
 
   void addTolist() {
     if (nameController.text.isNotEmpty) {
+      
       setState(() {
         names.add(nameController.text);
+        nameController.clear();
+        
       });
     }
   }
